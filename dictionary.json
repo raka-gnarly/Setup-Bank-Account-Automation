@@ -1,218 +1,272 @@
 [
     {       
         "folder_name": "union",
-        "bank_name": "Union Bank of India"
+        "bank_name": "Union Bank of India",
+        "branch": "merchant"
     },
     {
         "folder_name": "union-corporate",
-        "bank_name": "Union Bank Corporate"
+        "bank_name": "Union Bank Corporate",
+        "branch": "merchant"
     },
     {
         "folder_name": "aubank",
-        "bank_name": "AU Small Finance Bank"
+        "bank_name": "AU Small Finance Bank",
+        "branch": "merchant"
     }, 
     {    
         "folder_name": "bom",
-        "bank_name": "Bank of Maharashtra"
+        "bank_name": "Bank of Maharashtra",
+        "branch": "merchant"
     }, 
     {
         "folder_name": "dhanlaxmi",
-        "bank_name": "Dhanlaxmi Bank"
+        "bank_name": "Dhanlaxmi Bank",
+        "branch": "merchant"
     }, 
     {
         "folder_name": "hdfc-new",
-        "bank_name": "HDFC Bank Newest"
+        "bank_name": "HDFC Bank Newest",
+        "branch": "merchant"
     }, 
     {    
         "folder_name": "karnataka",
-        "bank_name": "Karnataka Bank"
+        "bank_name": "Karnataka Bank",
+        "branch": "merchant"
     }, 
     {
         "folder_name": "pnb",
-        "bank_name": "Punjab National Bank"
+        "bank_name": "Punjab National Bank",
+        "branch": "merchant"
     }, 
     {
         "folder_name": "sib",
-        "bank_name": "South Indian Bank"
+        "bank_name": "South Indian Bank",
+        "branch": "merchant"
     }, 
     {
         "folder_name": "union",
-        "bank_name": "Union Bank of India"
+        "bank_name": "Union Bank of India",
+        "branch": "merchant"
     }, 
     {
         "folder_name": "axis",
-        "bank_name": "Axis Bank"
+        "bank_name": "Axis Bank",
+        "branch": "merchant"
     }, 
     {
         "folder_name": "canara",
-        "bank_name": "Canara Bank"
+        "bank_name": "Canara Bank",
+        "branch": "merchant"
     }, 
     {
         "folder_name": "equitas",
-        "bank_name": "Equitas Small Finance Bank"
+        "bank_name": "Equitas Small Finance Bank",
+        "branch": "merchant"
     }, 
     {
         "folder_name": "idbi-personal",
-        "bank_name": "IDBI Bank"
+        "bank_name": "IDBI Bank",
+        "branch": "merchant"
     }, 
     {
         "folder_name": "karnataka-mc",
-        "bank_name": "Karnataka Bank Money Click"
+        "bank_name": "Karnataka Bank Money Click",
+        "branch": "merchant"
     }, 
     {
         "folder_name": "pnb-corporate",
-        "bank_name": "Punjab National Bank Corporate"
+        "bank_name": "Punjab National Bank Corporate",
+        "branch": "merchant"
     }, 
     {
         "folder_name": "suryoday",
-        "bank_name": "Suryoday Small Finance Bank"
+        "bank_name": "Suryoday Small Finance Bank",
+        "branch": "merchant"
     }, 
     {
         "folder_name": "utkarsh",
-        "bank_name": "Utkarsh Small Finance Bank"
+        "bank_name": "Utkarsh Small Finance Bank",
+        "branch": "merchant"
     }, 
     {
         "folder_name": "axisneo",
-        "bank_name": "Axis Bank Neo"
+        "bank_name": "Axis Bank Neo",
+        "branch": "merchant"
     }, 
     {
         "folder_name": "cbi",
-        "bank_name": "Central Bank of India"
+        "bank_name": "Central Bank of India",
+        "branch": "merchant"
     }, 
     {
         "folder_name": "esaf",
-        "bank_name": "ESAF Small Finance Bank"
+        "bank_name": "ESAF Small Finance Bank",
+        "branch": "merchant"
     }, 
     {
         "folder_name": "idfc",
-        "bank_name": "IDFC First Bank"
+        "bank_name": "IDFC First Bank",
+        "branch": "merchant"
     }, 
     {
         "folder_name": "kotak",
-        "bank_name": "Kotak Mahindra Bank"
+        "bank_name": "Kotak Mahindra Bank",
+        "branch": "merchant"
     }, 
     {
         "folder_name": "psb",
-        "bank_name": "Punjab & Sind Bank"
+        "bank_name": "Punjab & Sind Bank",
+        "branch": "merchant"
     }, 
     {
         "folder_name": "tamilnad",
-        "bank_name": "Tamilnad Mercantile Bank"
+        "bank_name": "Tamilnad Mercantile Bank",
+        "branch": "merchant"
     }, 
     {
         "folder_name": "yes-business",
-        "bank_name": "YES Bank Business"
+        "bank_name": "YES Bank Business",
+        "branch": "merchant"
     }, 
     {
         "folder_name": "bandhan",
-        "bank_name": "Bandhan Bank"
+        "bank_name": "Bandhan Bank",
+        "branch": "merchant"
     }, 
     {
         "folder_name": "cbi-corporate", 
-        "bank_name": "Central Bank of India Corporate"
+        "bank_name": "Central Bank of India Corporate",
+        "branch": "merchant"
     }, 
     {
         "folder_name": "federal",
-        "bank_name": "Federal Bank"
+        "bank_name": "Federal Bank",
+        "branch": "merchant"
     }, 
     {
         "folder_name": "indian",
-        "bank_name": "Indian Bank"
+        "bank_name": "Indian Bank",
+        "branch": "merchant"
     }, 
     {
         "folder_name": "kvbretail",
-        "bank_name": "Karur Vysya Bank"
+        "bank_name": "Karur Vysya Bank",
+        "branch": "merchant"
     }, 
     {
         "folder_name": "psb-personal",
-        "bank_name": "Punjab & Sind Bank Personal"
+        "bank_name": "Punjab & Sind Bank Personal",
+        "branch": "merchant"
     }, 
     {
         "folder_name": "yes-corporate",
-        "bank_name": "YES Bank Corporate"
+        "bank_name": "YES Bank Corporate",
+        "branch": "merchant"
     }, 
     {
         "folder_name": "city-union",
-        "bank_name": "City Union Bank"
+        "bank_name": "City Union Bank",
+        "branch": "merchant"
     }, 
     {
         "folder_name": "fincare",
-        "bank_name": "Fincare Small Finance Bank"
+        "bank_name": "Fincare Small Finance Bank",
+        "branch": "merchant"
     }, 
     {
         "folder_name": "indusind",
-        "bank_name": "IndusInd Bank"
+        "bank_name": "IndusInd Bank",
+        "branch": "merchant"
     }, 
     {
         "folder_name": "rbl",
-        "bank_name": "RBL Bank"
+        "bank_name": "RBL Bank",
+        "branch": "merchant"
     }, 
     {
         "folder_name": "uco-corporate",
-        "bank_name": "UCO Bank Corporate"
+        "bank_name": "UCO Bank Corporate",
+        "branch": "merchant"
     }, 
     {
         "folder_name": "yesbank",
-        "bank_name": "YES Bank"
+        "bank_name": "YES Bank",
+        "branch": "merchant"
     }, 
     {
         "folder_name": "baroda",
-        "bank_name": "Bank of Baroda"
+        "bank_name": "Bank of Baroda",
+        "branch": "merchant"
     }, 
     {
         "folder_name": "csb",
-        "bank_name": "CSB Bank"
+        "bank_name": "CSB Bank",
+        "branch": "merchant"
     }, 
     {
         "folder_name": "fino",
-        "bank_name": "Fino Payments Bank"
+        "bank_name": "Fino Payments Bank",
+        "branch": "merchant"
     }, 
     {
         "folder_name": "iob-personal",
-        "bank_name": "Indian Overseas Bank Personal"
+        "bank_name": "Indian Overseas Bank Personal",
+        "branch": "merchant"
     }, 
     {
         "folder_name": "nesfb",
-        "bank_name": "North East Small Finance Bank"
+        "bank_name": "North East Small Finance Bank",
+        "branch": "merchant"
     }, 
     {
         "folder_name": "sbi",
-        "bank_name": "State Bank of India"
+        "bank_name": "State Bank of India",
+        "branch": "merchant"
     }, 
     {
         "folder_name": "ucobank",
-        "bank_name": "UCO Bank"
+        "bank_name": "UCO Bank",
+        "branch": "merchant"
     }, 
     {
         "folder_name": "yesmsme",
-        "bank_name": "YES Bank MSME"
+        "bank_name": "YES Bank MSME",
+        "branch": "merchant"
     }, 
     {
         "folder_name": "boi",
-        "bank_name": "Bank of India"
+        "bank_name": "Bank of India",
+        "branch": "merchant"
     }, 
     {
         "folder_name": "dbs",
-        "bank_name": "DBS Bank"
+        "bank_name": "DBS Bank",
+        "branch": "merchant"
     }, 
     {
         "folder_name": "hdfc",
-        "bank_name": "HDFC Bank"
+        "bank_name": "HDFC Bank",
+        "branch": "merchant"
     }, 
     {
         "folder_name": "jkbank",
-        "bank_name": "Jammu & Kashmir Bank"
+        "bank_name": "Jammu & Kashmir Bank",
+        "branch": "merchant"
     }, 
     {
         "folder_name": "overseas",
-        "bank_name": "Indian Overseas Bank"
+        "bank_name": "Indian Overseas Bank",
+        "branch": "merchant"
     }, 
     {
         "folder_name": "sbi-personal",
-        "bank_name": "State Bank of India Personal"
+        "bank_name": "State Bank of India Personal",
+        "branch": "merchant"
     }, 
     {
         "folder_name": "ujjivan",
-        "bank_name": "Ujjivan Small Finance Bank"
+        "bank_name": "Ujjivan Small Finance Bank",
+        "branch": "merchant"
     }
 ]
