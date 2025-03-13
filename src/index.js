@@ -3,6 +3,7 @@ const { insertBank } = require("../db/insertBank");
 const { waitMessage, stopBot } = require("../helpers")
 const ExtractorV2 = require("./extractorv2");
 const moment = require("moment");
+const { exec } = require("child_process");
 
 class SetupBankAutomation {
     constructor(bot) {
@@ -115,6 +116,7 @@ class SetupBankAutomation {
                     "[ SUCCESS CREATING NEW BANK ACCOUNT ]\n" +
                     createdMsg
                 );
+                await this.setupServer(msg, { bankName: bankData[0].name, ...insertedData });
             } else if (parseInt(message) >= 1 && parseInt(message) <= 9) {
                 await this.editDataAction({...msg, text: message}, bankData, data);
             } else {
@@ -149,6 +151,39 @@ class SetupBankAutomation {
 
         await this.bankDataAction(msg, bankData, data);
 
+    }
+
+    setupServer = async (msg, data) => {
+        await this.bot.sendMessage(msg.chat.id, "Preparing setup on server....");
+        await this.bot.sendMessage(msg.chat.id, "Please insert Proxy for this account using format: \n" +
+            "PROXY|USERNAME|PASSWORD\n" + "for example: 192.x.x.x:8800|username|1234"
+        );
+
+        const rawProxy = await waitMessage(msg.chat.id);
+        const proxy = rawProxy?.split("|")?.[0]?.trim();
+        const username = rawProxy?.split("|")?.[1]?.trim() ?? null;
+        const password = rawProxy?.split("|")?.[2]?.trim() ?? null;
+
+        let message = "[ PROXY DATA ]\n" + "Proxy: " + proxy + "\n";
+        username ? message += "Username: " + username + "\n" : null;
+        password ? message += "Password: " + password + "\n" : null;
+
+        await this.bot.sendMessage(msg.chat.id,  message);
+        await this.bot.sendMessage(msg.chat.id, "Preparing setup on server. Please wait...");
+        try {
+            exec(`sh auto.sh merchant ${data.accNumber} ${proxy} ${process.env.MERCHANT_ID} ${data.bankName}`, (error, stdout, stderr) => {
+                if (error) {
+                    console.error(`exec error: ${error}`);
+                    throw error;
+                }
+                console.log(`stdout: ${stdout}`);
+                console.error(`stderr: ${stderr}`);
+                this.bot.sendMessage(msg.chat.id, "Server setup completed successfully.");
+            });
+        } catch (err) {
+            console.error(err);
+            await this.bot.sendMessage(msg.chat.id, "Failed to setup server. Please setup it manually.");
+        }
     }
 }
 

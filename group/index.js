@@ -5,19 +5,17 @@ const { Api } = require("telegram");
 const fs = require("fs");
 const TelegramBot = require("node-telegram-bot-api");
 const { TELEGRAM_BOT_GROUP_TOKEN, TELEGRAM_API_HASH, TELEGRAM_PHONE_NUMBER, TELEGRAM_API_ID } = require("../config/index");
-const { fetchCode } = require("./helpers");
-const jsonfile = require("jsonfile");
 const path = require("path");
-const { setIsRequestCode } = require("../config/config");
+const { waitMessage, saveMessage } = require("../helpers");
 
 const apiId = parseInt(TELEGRAM_API_ID); // Replace with your actual API ID
 const apiHash = TELEGRAM_API_HASH; // Replace with your actual API Hash
 const SESSION_FILE = path.join(__dirname, "/session.json");
 const phoneNumber = TELEGRAM_PHONE_NUMBER; // Replace with your phone number
 const password = '';
-const pathConfig = path.join(__dirname, "/config.json");
 
 const bot = new TelegramBot(TELEGRAM_BOT_GROUP_TOKEN, { polling: true });
+const botBank = require("../telegram");
 
 // Load session if it exists
 let stringSession = new StringSession(
@@ -28,28 +26,19 @@ const client = new TelegramClient(stringSession, apiId, apiHash, {
     connectionRetries: 5,
 });
 
-async function createGroup(groupName, botScraper = '@paykassma_automation_scraper_bot', chatId) {   
+async function createGroup(groupName, botScraper = '@paykassma_automation_scraper_bot', chatId, basePath = path.dirname(__dirname)) {   
     bot.on("message", async (msg) => {
-        if (msg.chat.id == chatId) {
-            code = msg.text;
-            await jsonfile.writeFile(pathConfig, {
-                code: code,
-            });
-        }
+        await saveMessage(msg, basePath);
     });
 
     // ✅ Login only if session doesn't exist
     if (!fs.existsSync(SESSION_FILE)) {
-        await jsonfile.writeFile(pathConfig, {
-            code: null,
-        });
         await bot.sendMessage(chatId, "[REQUEST CODE FOR TELEGRAM LOGIN]\n\nPlease send the code for login to the bot.");
-        setIsRequestCode(true);
 
         await client.start({
             phoneNumber: async () => phoneNumber,
             password: async () => password,
-            phoneCode: async () => await fetchCode(pathConfig),
+            phoneCode: async () => await waitMessage(chatId),
             onError: (err) => console.log(err),
         });
 
@@ -57,7 +46,6 @@ async function createGroup(groupName, botScraper = '@paykassma_automation_scrape
         
         // Save session
         fs.writeFileSync(SESSION_FILE, client.session.save());
-        setIsRequestCode(false);
         console.log("✅ Session saved! You won't need to log in again.");
     } else {
         await client.connect();
@@ -105,13 +93,28 @@ async function createGroup(groupName, botScraper = '@paykassma_automation_scrape
     message += "Group Invite Link: " + link;
     // console.log("Group Invite Link: " + link);
     
-    await bot.sendMessage(chatId, message, {
-        parse_mode: "Markdown",
-        link_preview_options: {
-            is_disabled: false,
-            url: link
+    let retries = 0;
+    while(true) {
+        try {
+            await bot.sendMessage(chatId, message, {
+                parse_mode: "Markdown"
+            });
+            
+            break;
+        } catch (err) {
+            console.error("retries");
+            console.log(chatId, message);
+            await new Promise((r) => setTimeout(r, 1000));
+            retries++;
+            if (retries > 3) {
+                await botBank.sendMessage(chatId, message, {
+                    parseMode: "Markdown" 
+                });
+                break;
+            }
+
         }
-    });
+    }
 
     return {
         groupId: "-" + groupId,
