@@ -24,7 +24,7 @@ const init = async () => {
 
 const start = async (msg) => {
     await checkDir(basePath);
-    console.log(__dirname);
+
     const id = msg.chat.id?.toString()?.replace("-", "");
     const filePath = path.join(__dirname, `data/${id}.json`);
     const data = await readFile(filePath);
@@ -32,7 +32,7 @@ const start = async (msg) => {
 
     const chatId = msg.chat.id;
     bot.sendMessage(chatId, "Welcome to Telegram Group Maker Bot! Please type name of the group.");
-    console.log(basePath);
+    
     let groupName = await waitMessage(msg.chat.id, basePath);
     bot.sendMessage(chatId, `Group name: ${groupName}\n\nPlease type the bot username.`);
 
