@@ -1,7 +1,7 @@
 # Setup Bank Account Automation
 
 ## Pendahuluan
-Proyek ini bertujuan untuk mengatur dan menjelaskan langkah-langkah dalam mendirikan sistem perbankan sederhana.
+Proyek ini terkait dengan masalah banyaknya integrasi yang diperlukan untuk setup akun bank. Proses manual yang memakan waktu dan rentan kesalahan ini mendorong kami untuk membuat sebuah proyek otomasi. Proyek ini bertujuan untuk menyederhanakan dan mempercepat proses setup akun bank dengan melakukan beberapa tugas secara otomatis, seperti memasukkan data akun bank ke dalam database, membuat grup Telegram untuk akun tersebut, dan melakukan konfigurasi di server. Dengan adanya otomasi ini, diharapkan dapat mengurangi kesalahan manusia dan meningkatkan efisiensi dalam proses setup akun bank.
 
 ## Persyaratan
 - Node.js
