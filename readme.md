@@ -1,5 +1,4 @@
 # Setup Bank Account Automation
-
 ## Pendahuluan
 Proyek ini terkait dengan masalah banyaknya integrasi yang diperlukan untuk setup akun bank. Proses manual yang memakan waktu dan rentan kesalahan ini mendorong kami untuk membuat sebuah proyek otomasi. Proyek ini bertujuan untuk menyederhanakan dan mempercepat proses setup akun bank dengan melakukan beberapa tugas secara otomatis, seperti memasukkan data akun bank ke dalam database, membuat grup Telegram untuk akun tersebut, dan melakukan konfigurasi di server. Dengan adanya otomasi ini, diharapkan dapat mengurangi kesalahan manusia dan meningkatkan efisiensi dalam proses setup akun bank.
 
@@ -53,5 +52,7 @@ Proyek ini terkait dengan masalah banyaknya integrasi yang diperlukan untuk setu
 Silakan buat pull request untuk kontribusi atau perbaikan.
 
 ## Credit
-Develop and Initiated by cemilick
+<p align="center" style="border: 1px solid; padding: 10px;">
+Develop and Initiated by cemilick<br>
 © 2025 Setup Bank Account Automation. All rights reserved.
+</p>
