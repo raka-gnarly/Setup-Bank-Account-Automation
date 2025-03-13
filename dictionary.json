@@ -1,0 +1,218 @@
+[
+    {       
+        "folder_name": "union",
+        "bank_name": "Union Bank of India"
+    },
+    {
+        "folder_name": "union-corporate",
+        "bank_name": "Union Bank Corporate"
+    },
+    {
+        "folder_name": "aubank",
+        "bank_name": "AU Small Finance Bank"
+    }, 
+    {    
+        "folder_name": "bom",
+        "bank_name": "Bank of Maharashtra"
+    }, 
+    {
+        "folder_name": "dhanlaxmi",
+        "bank_name": "Dhanlaxmi Bank"
+    }, 
+    {
+        "folder_name": "hdfc-new",
+        "bank_name": "HDFC Bank Newest"
+    }, 
+    {    
+        "folder_name": "karnataka",
+        "bank_name": "Karnataka Bank"
+    }, 
+    {
+        "folder_name": "pnb",
+        "bank_name": "Punjab National Bank"
+    }, 
+    {
+        "folder_name": "sib",
+        "bank_name": "South Indian Bank"
+    }, 
+    {
+        "folder_name": "union",
+        "bank_name": "Union Bank of India"
+    }, 
+    {
+        "folder_name": "axis",
+        "bank_name": "Axis Bank"
+    }, 
+    {
+        "folder_name": "canara",
+        "bank_name": "Canara Bank"
+    }, 
+    {
+        "folder_name": "equitas",
+        "bank_name": "Equitas Small Finance Bank"
+    }, 
+    {
+        "folder_name": "idbi-personal",
+        "bank_name": "IDBI Bank"
+    }, 
+    {
+        "folder_name": "karnataka-mc",
+        "bank_name": "Karnataka Bank Money Click"
+    }, 
+    {
+        "folder_name": "pnb-corporate",
+        "bank_name": "Punjab National Bank Corporate"
+    }, 
+    {
+        "folder_name": "suryoday",
+        "bank_name": "Suryoday Small Finance Bank"
+    }, 
+    {
+        "folder_name": "utkarsh",
+        "bank_name": "Utkarsh Small Finance Bank"
+    }, 
+    {
+        "folder_name": "axisneo",
+        "bank_name": "Axis Bank Neo"
+    }, 
+    {
+        "folder_name": "cbi",
+        "bank_name": "Central Bank of India"
+    }, 
+    {
+        "folder_name": "esaf",
+        "bank_name": "ESAF Small Finance Bank"
+    }, 
+    {
+        "folder_name": "idfc",
+        "bank_name": "IDFC First Bank"
+    }, 
+    {
+        "folder_name": "kotak",
+        "bank_name": "Kotak Mahindra Bank"
+    }, 
+    {
+        "folder_name": "psb",
+        "bank_name": "Punjab & Sind Bank"
+    }, 
+    {
+        "folder_name": "tamilnad",
+        "bank_name": "Tamilnad Mercantile Bank"
+    }, 
+    {
+        "folder_name": "yes-business",
+        "bank_name": "YES Bank Business"
+    }, 
+    {
+        "folder_name": "bandhan",
+        "bank_name": "Bandhan Bank"
+    }, 
+    {
+        "folder_name": "cbi-corporate", 
+        "bank_name": "Central Bank of India Corporate"
+    }, 
+    {
+        "folder_name": "federal",
+        "bank_name": "Federal Bank"
+    }, 
+    {
+        "folder_name": "indian",
+        "bank_name": "Indian Bank"
+    }, 
+    {
+        "folder_name": "kvbretail",
+        "bank_name": "Karur Vysya Bank"
+    }, 
+    {
+        "folder_name": "psb-personal",
+        "bank_name": "Punjab & Sind Bank Personal"
+    }, 
+    {
+        "folder_name": "yes-corporate",
+        "bank_name": "YES Bank Corporate"
+    }, 
+    {
+        "folder_name": "city-union",
+        "bank_name": "City Union Bank"
+    }, 
+    {
+        "folder_name": "fincare",
+        "bank_name": "Fincare Small Finance Bank"
+    }, 
+    {
+        "folder_name": "indusind",
+        "bank_name": "IndusInd Bank"
+    }, 
+    {
+        "folder_name": "rbl",
+        "bank_name": "RBL Bank"
+    }, 
+    {
+        "folder_name": "uco-corporate",
+        "bank_name": "UCO Bank Corporate"
+    }, 
+    {
+        "folder_name": "yesbank",
+        "bank_name": "YES Bank"
+    }, 
+    {
+        "folder_name": "baroda",
+        "bank_name": "Bank of Baroda"
+    }, 
+    {
+        "folder_name": "csb",
+        "bank_name": "CSB Bank"
+    }, 
+    {
+        "folder_name": "fino",
+        "bank_name": "Fino Payments Bank"
+    }, 
+    {
+        "folder_name": "iob-personal",
+        "bank_name": "Indian Overseas Bank Personal"
+    }, 
+    {
+        "folder_name": "nesfb",
+        "bank_name": "North East Small Finance Bank"
+    }, 
+    {
+        "folder_name": "sbi",
+        "bank_name": "State Bank of India"
+    }, 
+    {
+        "folder_name": "ucobank",
+        "bank_name": "UCO Bank"
+    }, 
+    {
+        "folder_name": "yesmsme",
+        "bank_name": "YES Bank MSME"
+    }, 
+    {
+        "folder_name": "boi",
+        "bank_name": "Bank of India"
+    }, 
+    {
+        "folder_name": "dbs",
+        "bank_name": "DBS Bank"
+    }, 
+    {
+        "folder_name": "hdfc",
+        "bank_name": "HDFC Bank"
+    }, 
+    {
+        "folder_name": "jkbank",
+        "bank_name": "Jammu & Kashmir Bank"
+    }, 
+    {
+        "folder_name": "overseas",
+        "bank_name": "Indian Overseas Bank"
+    }, 
+    {
+        "folder_name": "sbi-personal",
+        "bank_name": "State Bank of India Personal"
+    }, 
+    {
+        "folder_name": "ujjivan",
+        "bank_name": "Ujjivan Small Finance Bank"
+    }
+]
