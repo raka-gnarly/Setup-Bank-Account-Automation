@@ -26,7 +26,7 @@ const client = new TelegramClient(stringSession, apiId, apiHash, {
     connectionRetries: 5,
 });
 
-async function createGroup(groupName, botScraper = '@paykassma_automation_scraper_bot', chatId, basePath = path.dirname(__dirname)) {   
+async function createGroup(groupName, botScraper = '@paykassma_automation_scraper_bot', chatId, basePath = path.dirname(__dirname), bulk = false) {   
     bot.on("message", async (msg) => {
         await saveMessage(msg, basePath);
     });
@@ -93,6 +93,13 @@ async function createGroup(groupName, botScraper = '@paykassma_automation_scrape
     message += "Group Invite Link: " + link;
     // console.log("Group Invite Link: " + link);
     
+    if (bulk) {
+        return {
+            message,
+            link: link,
+        };
+    }
+
     let retries = 0;
     while(true) {
         try {
